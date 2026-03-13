@@ -1,0 +1,27 @@
+body {
+    width: 900px;
+    margin: 0 auto;
+}
+img {
+    width: 600px;
+}
+p {
+    background-color: lightgrey;
+    color: dodgerblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 27px;
+    font-weight: bold;
+    text-align: left;
+    margin: 20px 0 0 0;
+}
+.photos {
+    max-width: 600px;
+    display:block;
+    margin: 0 auto 20px;
+}
+.footer {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-weight: bold;
+    font-size: 27px;
+}

@@ -1,0 +1,57 @@
+body {
+    background-color: lightgray;
+    width: 45%;
+    margin: 0 auto;
+}
+.cow {
+    float: right;
+    margin: 5px;
+}
+h1, nav {
+    text-align: center;
+}
+h1 {
+    font-size: 72px;
+}
+nav a {
+    margin: 30px;
+}
+.photos {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    clear: both;
+    object-fit: cover;
+    justify-content: center;
+}
+.leaf {
+    height: 245px;
+    margin: 0px;
+    padding: 0px;
+}
+.street {
+    height: 245px;
+    margin: 0px;
+    padding: 0px;
+}
+.camera {
+    height: 227px;
+    margin: 0px;
+    padding: 0px;
+}
+.winter {
+    height: 227px;
+    margin: 0px;
+    padding: 0px;
+}
+.valley {
+    height: 227px;
+    margin: 0px;
+    padding: 0px;
+}
+.car {
+    height: 227px;
+    margin: 0px;
+    padding: 0px;
+}
