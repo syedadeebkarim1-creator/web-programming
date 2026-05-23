@@ -1,0 +1,200 @@
+/* image of the galaxy milky way is background */
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #000 url("images/milky way.jpeg") center / cover no-repeat fixed;
+    color: #fff;
+    font-family: 'Magneto', sans-serif;
+    box-sizing: border-box;
+}
+
+/* big planetarium logo */
+
+.header {
+    width: 100%;
+    padding: 2.5rem 2rem 2rem;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+h1 {
+    display: inline-block;
+    font-weight: bold;
+    margin: 0;
+    padding: 0px 20px 0 20px;
+    background-color: #196b24;
+    font-weight: bold;
+    margin: 0;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+.big { 
+    display: inline-block; 
+    font-size: 4rem; 
+}
+.small { 
+    display: inline-block; 
+    font-size: 2rem; 
+}
+
+.pagebox {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    position: relative;
+    overflow: visible;
+    text-align: center;
+}
+
+.solarsystem {
+    width: 100%;
+    max-width: 1300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.sun {
+    position: absolute;
+    top: 50%;
+    left: -400px;
+    transform: translateY(-50%);
+    width: 600px;
+    max-width: none;
+    z-index: 1;
+}
+
+.planets {
+    padding-left: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.mercury, .venus, .earth, .mars, .jupiter, .saturn, .uranus, .neptune {
+    position: relative;
+    text-decoration: none;
+    vertical-align: middle;
+    color: inherit;
+    z-index: 1;
+    cursor: pointer;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+/* Each planet has different size */
+
+.mercury {
+    flex-basis: 40px;
+    min-width: 24px;
+    max-width: 60px;
+}
+.venus {
+    flex-basis: 50px;
+    min-width: 28px;
+    max-width: 75px;
+}
+.earth {
+    flex-basis: 60px;
+    min-width: 32px;
+    max-width: 85px;
+}
+.mars {
+    flex-basis: 50px;
+    min-width: 26px;
+    max-width: 65px;
+}
+.jupiter {
+    flex-basis: 130px;
+    min-width: 80px;
+    max-width: 240px;
+}
+.saturn {
+    flex-basis: 110px;
+    min-width: 110px;
+    max-width: 210px;
+}
+.uranus {
+    flex-basis: 70px;
+    min-width: 55px;
+    max-width: 120px;
+}
+.neptune {
+    flex-basis: 70px;
+    min-width: 45px;
+    max-width: 120px;
+}
+
+.mercury img, .venus img, .earth img, .mars img, .jupiter img, .saturn img, .uranus img, .neptune img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transform-origin: center center;
+    max-width: 100%;
+}
+
+/* Page changes when screen is smaller than 1000px for planets to come down from each other */
+
+@media (max-width: 1000px) {
+    .pagebox { 
+        padding: 1.5rem;
+    }
+    .big { 
+        font-size: 3rem; 
+    }
+    .small { 
+        font-size: 1.6rem; 
+    }
+    .solarsystem { 
+        flex-direction: column; 
+        position: relative; 
+        height: 100%; 
+        justify-content: flex-start; 
+        padding: 300px 0 0; 
+        gap: 1.5rem; 
+    }
+    .sun { 
+        position: absolute; 
+        top: -30%; 
+        left: 50%; 
+        transform: translateX(-50%); 
+        width: 800px; 
+        height: 800px; 
+        z-index: 0; 
+    }
+    .planets { 
+        padding-left: 0;
+        flex-direction: column; 
+        flex-wrap: wrap; 
+        width: 100%; 
+        margin-left: 0; 
+        justify-content: flex-start; 
+        align-items: center; 
+        gap: 5rem; 
+    }
+    .mercury, .venus, .earth, .mars, .jupiter, .saturn, .uranus, .neptune { 
+        flex-basis: auto; 
+        position: relative; 
+        top: 0; 
+        transform: none; 
+        left: auto; 
+        width: auto; 
+        min-width: 90px; 
+    }
+    .mercury img, .venus img, .earth img, .mars img, .jupiter img, .saturn img, .uranus img, .neptune img { 
+        width: 100%; 
+    }
+}
